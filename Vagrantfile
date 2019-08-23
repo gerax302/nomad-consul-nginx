@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
 
-  1.upto(6) do |i|
+  1.upto(5) do |i|
     config.vm.define "cluster#{i}" do |cluster|
       cluster.vm.box = "centos/7"
       cluster.vm.network "private_network", ip: "192.168.10.1#{i}"
