@@ -1,6 +1,7 @@
 ---
 
-nomad_version: 0.5.0
+#nomad_version: 0.5.0
+nomad_version: 0.7.0
 
 nomad_client: false
 nomad_server: true

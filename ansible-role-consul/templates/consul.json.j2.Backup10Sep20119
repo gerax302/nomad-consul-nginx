@@ -7,12 +7,12 @@
     "datacenter": "europe",
     "data_dir": "{{ consul_data_dir }}",
     "bind_addr":"0.0.0.0",
-    "advertise_addr": "{{ ansible_eth0.ipv4.address }}",
+    "advertise_addr": "{{ ansible_default_ipv4 }}",
     "addresses": {
-        "http": "0.0.0.0" 
+        "http": "0.0.0.0"
     },
     "telemetry": {
-        "statsd_address": "localhost:8125" 
+        "statsd_address": "127.0.0.1:8125"
     },
     "retry_join":[
     {% set comma = joiner(", ") %}

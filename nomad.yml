@@ -9,7 +9,6 @@
   roles:
     - ansible-role-consul
     - ansible-role-nomad
-#    - ansible-role-dnsmasq
 
 - hosts: server
   become: yes
