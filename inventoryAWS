@@ -13,5 +13,5 @@ cluster6 ansible_host=34.242.220.248 ansible_connection=ssh ansible_user=centos 
 nomad_client=true
 nomad_server=false
 
-[all:vars]
-ansible_user=centos
+#[all:vars]
+#ansible_user=centos

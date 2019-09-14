@@ -3,6 +3,7 @@
   roles:
     - ansible-role-docker
     - ansible-role-java
+    #- gantsign.golang
 
 - hosts: all
   become: yes

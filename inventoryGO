@@ -1,2 +1,1 @@
-
 cluster1 ansible_host=54.194.175.16 ansible_connection=ssh ansible_user=centos ansible_ssh_host=54.194.175.16
