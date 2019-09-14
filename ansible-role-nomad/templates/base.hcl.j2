@@ -20,15 +20,15 @@ bind_addr = "0.0.0.0"
 # and clients. The IPs can be materialized by Terraform or be replaced by an
 # init script.
 advertise {
-    http = "{{ ansible_default_ipv4 }}:4646"
-    rpc = "{{ ansible_default_ipv4 }}:4647"
-    serf = "{{ ansible_default_ipv4 }}:4648"
+    http = "{{ ansible_eth0.ipv4.address }}:4646"
+    rpc = "{{ ansible_eth0.ipv4.address }}:4647"
+    serf = "{{ ansible_eth0.ipv4.address }}:4648"
 }
 
 # Ship metrics to monitor the health of the cluster and to see task resource
 # usage.
 telemetry {
-    statsd_address = "127.0.0.1:8125"
+    statsd_address = "localhost:8125"  
     publish_allocation_metrics = true
     publish_node_metrics = true
 }
@@ -38,7 +38,7 @@ enable_debug = true
 
 consul {
     # The address to the Consul agent.
-    address = "127.0.0.1:8500"
+    address = "localhost:8500"
 
     # The service name to register the server and client with Consul.
     server_service_name = "nomad-server"

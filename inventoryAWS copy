@@ -1,0 +1,16 @@
+[server]
+cluster1 ansible_host=54.154.115.95 ansible_connection=ssh  ansible_user=centos ansible_ssh_host=54.154.115.95 consul_bootstrap=true
+cluster2 ansible_host=63.35.199.34  ansible_connection=ssh  ansible_user=centos ansible_ssh_host=63.35.199.34 
+cluster3 ansible_host=18.202.229.212 ansible_connection=ssh ansible_user=centos ansible_ssh_host=18.202.229.212
+
+[client]
+cluster4 ansible_host=34.242.47.17 ansible_connection=ssh ansible_user=centos ansible_ssh_host=34.242.47.17
+cluster5 ansible_host=54.229.10.2 ansible_connection=ssh ansible_user=centos ansible_ssh_host=54.229.10.2 
+cluster6 ansible_host=34.245.71.58 ansible_connection=ssh ansible_user=centos ansible_ssh_host=34.245.71.58
+
+[client:vars]
+nomad_client=true
+nomad_server=false
+
+#[all:vars]
+#ansible_user=centos
