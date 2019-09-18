@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.configure(2) do |config|
+Vagrant.configure(4) do |config|
 
   1.upto(5) do |i|
     config.vm.define "cluster#{i}" do |cluster|
