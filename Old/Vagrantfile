@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# for further use, move this file to the root level directory
 Vagrant.configure(4) do |config|
 
   1.upto(5) do |i|
