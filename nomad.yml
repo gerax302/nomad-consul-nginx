@@ -4,6 +4,7 @@
     - ansible-role-docker
     - ansible-role-java
     #- gantsign.golang
+    - zerodowntime.vim
 
 - hosts: all
   become: yes

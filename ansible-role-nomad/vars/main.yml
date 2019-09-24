@@ -6,7 +6,9 @@ nomad_sha256sum:  b3b78dccbdbd54ddc7a5ffdad29bce2d745cac93ea9e45f94e078f57b756f5
 nomad_download_dir: /tmp
 nomad_install_dir: /usr/bin
 nomad_data_dir: /var/lib/nomad
-nomad_config_dir: /var/lib/nomad/conf
+nomad_config_dir: /var/lib/nomad/conf  
+### API & UI port 4646
+### Telemtetry con metricas grafana or datadog 
 nomad_log_file: /var/lib/nomad/logs/nomad.log
 nomad_user: nomad
 nomad_group: nomad

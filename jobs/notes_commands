@@ -1,0 +1,44 @@
+cd /var/lib/nomad/ para ir a donde dejamos nuestras configuraciones de nomad
+ base aplica a all instances
+ server aplica a solo tipo server 
+
+#simular que la instancia se apaga y ya no esparte del cluster
+#nos adyuda a dar mantenimiento a un server
+#ejecutamos el comando, las cargas actaules del server se mandan a otro
+#al terminar mantenimiento, corremos ahora con -disable instead -enable
+
+nomad node-drain -enable -self 
+#can run on docker running node for easier explanation
+
+then nomad node-status to see Drain Column 
+sudo docker ps to see there are no running containers 
+
+______________________________
+#lsitar los servicios corriendo en nomad 
+nomad status 
+
+#
+nomad status [allocation-id] 
+
+nomad logs [allocation-id] 
+
+#logs erroneos del servicio 
+nomad logs -stderr [allocation-id]  
+
+
+#status del servicio que se esta corriendo
+nomad alloc-status [id-serv]
+
+#lsitado de servers nomad 
+nomad server-members 
+
+#full 
+nomad node-status 
+
+
+
+
+server -- master
+cliente --nodo 
+analogia k8s
+master-worker

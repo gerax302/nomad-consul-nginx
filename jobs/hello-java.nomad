@@ -14,7 +14,7 @@ job "hello-java" {
 
       config {
         jar_path = "local/hello.jar"
-        jvm_options = ["-XX:-UseCompressedOops", "-Xmx2048m", "-Xms256m"]
+        jvm_options = ["-XX:-UseCompressedOops", "-Xmx1024m", "-Xms256m"]
       }
       artifact {
        source = "https://github.com/miyoda/nomad-consul-nginx/blob/master/jobs/hello.jar?raw=true"

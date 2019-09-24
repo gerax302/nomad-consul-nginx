@@ -46,7 +46,7 @@ job "jenkins-master" {
 
       resources {
         cpu    = 500
-        memory = 768
+        memory = 650
 
         network {
           mbits = 10
@@ -65,7 +65,6 @@ job "jenkins-master" {
         max_files     = 10
         max_file_size = 15
       }
-
       kill_timeout = "20s"
     }
   }
