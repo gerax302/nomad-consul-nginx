@@ -10,7 +10,7 @@ job "jenkins-master" {
   }
 
   group "jenkins-master" {
-    count = 3
+    count = 2
 
     restart {
       attempts = 10

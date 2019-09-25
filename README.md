@@ -50,7 +50,7 @@ nomad init
 nomad run example.nomad 
 nomad status
 nomad status example
-nomad alloc status [allocation-id]
+nomad alloc-status [allocation-id]
 
 nomad run hello-docker.nomad
 nomad status hello-docker
@@ -75,6 +75,7 @@ nomad node-drain -enable -self
 nomad namespaces list 
 
 ```
+---
 
 ### Raft testing 
 - Stop an instance from your cluster (leader as preference)
@@ -90,15 +91,5 @@ nomad namespaces list
 **Access to the Consul UI:**  http://cluster-public-IPv4-ip:8500/ui 
 
 **Access to the Nomad UI:**  http://cluster-public-IPv4-ip:4646/ui 
-
----
-
-### Final observations
-
-**Modifications:** @gerax302
-
-**Forked from:**
-https://www.adictosaltrabajo.com/tutoriales/nomad-despliegue-y-supervision-sencilla-de-aplicaciones/
-
 
 
